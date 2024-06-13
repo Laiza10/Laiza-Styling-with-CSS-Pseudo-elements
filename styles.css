@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(36,0,7);
+background: linear-gradient(90deg, rgba(36,0,7,1) 0%, rgba(121,9,25,1) 35%, rgba(255,0,71,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+.main-header::first-letter {
+    font-size: 350%;
+    color: rgb(224,131,215);
+color: linear-gradient(90deg, rgba(224,131,215,1) 0%, rgba(250,93,184,1) 35%, rgba(161,66,108,1) 100%);
+    font-weight: bold;
+    font-family:cursive;
+}
+
+.main-header {
+    font-size: 2em;
+    color: #fff;
+    margin: 20px 0;
+    position: relative;
+    font-family:Times new Roman;
+}
+
+.main-header::before,
+.main-header::after {
+    content: "☺️😙";
+    color: gold;
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+}
+
+.main-header::before {
+    left: -100px;
+}
+
+.main-header::after {
+    right: -100px;
+}
+
+.intro-paragraph {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 20px 0;
+    position: relative;
+    font-family:cursive;
+}
+
+.intro-paragraph::before,
+.intro-paragraph::after {
+    content: '"';
+    color: #aaa;
+    font-size: 1.5em;
+    position: absolute;
+}
+
+.intro-paragraph::before {
+    left: -15px;
+    top: -10px;
+}
+
+.intro-paragraph::after {
+    right: -15px;
+    bottom: -10px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #333;
+    background-color: silver;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+}
+.cta-button:hover {
+    background-color: black;
+}
+button:active {
+    font-size: 10px;
+    color: blue;
+}
+
+.cta-button::before,
+.cta-button::after {
+    content: "❕❕❕";
+    font-size: 1.2em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cta-button::before {
+    left: -70px;
+}
+
+.cta-button::after {
+    right: -70px;
+}
